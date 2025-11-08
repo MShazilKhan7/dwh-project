@@ -1,0 +1,18 @@
+# Core Data Processing
+pandas==2.2.2
+numpy==1.26.4
+
+# Database Connectivity
+SQLAlchemy==2.0.32
+pymysql==1.1.1
+
+# (Optional) Data Validation and Cleaning Helpers
+python-dateutil==2.9.0
+openpyxl==3.1.2
+
+# (Optional) Jupyter Environment
+ipykernel==6.29.5
+jupyterlab==4.2.5
+
+cryptography==43.0.1   # <-- Required for MySQL auth
+
