@@ -1,0 +1,31 @@
+{
+    "table_name": "dim_host",
+    "row_count": 37457,
+    "column_count": 2,
+    "columns": [
+        "host_id",
+        "host_name"
+    ],
+    "dtypes": {
+        "host_id": "int64",
+        "host_name": "object"
+    },
+    "parquet_size_kb": 433.56,
+    "csv_size_kb": 615.48,
+    "compression_ratio": 29.6,
+    "export_timestamp": "2025-11-12T19:33:43.326638",
+    "sample_data": [
+        {
+            "host_id": 2787,
+            "host_name": "John"
+        },
+        {
+            "host_id": 2845,
+            "host_name": "Jennifer"
+        },
+        {
+            "host_id": 4632,
+            "host_name": "Elisabeth"
+        }
+    ]
+}

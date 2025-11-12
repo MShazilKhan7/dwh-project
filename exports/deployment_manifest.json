@@ -1,0 +1,105 @@
+{
+    "deployment_date": "2025-11-12T19:34:13.126491",
+    "source_database": "airbnb_dwh",
+    "supabase_url": "https://pthpniidapeauubawfsr.supabase.co",
+    "bucket": "analytics-dwh",
+    "tables_deployed": 6,
+    "total_tables": 12,
+    "deployment_log": [
+        {
+            "table": "dim_date",
+            "status": "exported",
+            "rows": 1765,
+            "size_kb": 32.564453125
+        },
+        {
+            "table": "dim_date",
+            "status": "deployed",
+            "parquet_url": "analytics-dwh/dwh/parquet/dim_date.parquet",
+            "csv_url": "analytics-dwh/dwh/csv/dim_date.csv",
+            "metadata_url": "analytics-dwh/dwh/metadata/dim_date_metadata.json"
+        },
+        {
+            "table": "dim_host",
+            "status": "exported",
+            "rows": 37457,
+            "size_kb": 433.5625
+        },
+        {
+            "table": "dim_host",
+            "status": "deployed",
+            "parquet_url": "analytics-dwh/dwh/parquet/dim_host.parquet",
+            "csv_url": "analytics-dwh/dwh/csv/dim_host.csv",
+            "metadata_url": "analytics-dwh/dwh/metadata/dim_host_metadata.json"
+        },
+        {
+            "table": "dim_listing",
+            "status": "exported",
+            "rows": 48895,
+            "size_kb": 1396.6123046875
+        },
+        {
+            "table": "dim_listing",
+            "status": "deployed",
+            "parquet_url": "analytics-dwh/dwh/parquet/dim_listing.parquet",
+            "csv_url": "analytics-dwh/dwh/csv/dim_listing.csv",
+            "metadata_url": "analytics-dwh/dwh/metadata/dim_listing_metadata.json"
+        },
+        {
+            "table": "dim_location",
+            "status": "exported",
+            "rows": 48871,
+            "size_kb": 785.953125
+        },
+        {
+            "table": "dim_location",
+            "status": "deployed",
+            "parquet_url": "analytics-dwh/dwh/parquet/dim_location.parquet",
+            "csv_url": "analytics-dwh/dwh/csv/dim_location.csv",
+            "metadata_url": "analytics-dwh/dwh/metadata/dim_location_metadata.json"
+        },
+        {
+            "table": "dim_room",
+            "status": "exported",
+            "rows": 3,
+            "size_kb": 1.7626953125
+        },
+        {
+            "table": "dim_room",
+            "status": "deployed",
+            "parquet_url": "analytics-dwh/dwh/parquet/dim_room.parquet",
+            "csv_url": "analytics-dwh/dwh/csv/dim_room.csv",
+            "metadata_url": "analytics-dwh/dwh/metadata/dim_room_metadata.json"
+        },
+        {
+            "table": "fact_listing",
+            "status": "exported",
+            "rows": 48895,
+            "size_kb": 1299.5419921875
+        },
+        {
+            "table": "fact_listing",
+            "status": "deployed",
+            "parquet_url": "analytics-dwh/dwh/parquet/fact_listing.parquet",
+            "csv_url": "analytics-dwh/dwh/csv/fact_listing.csv",
+            "metadata_url": "analytics-dwh/dwh/metadata/fact_listing_metadata.json"
+        }
+    ],
+    "data_warehouse_schema": {
+        "dimensions": [
+            "dim_listing",
+            "dim_host",
+            "dim_location",
+            "dim_room",
+            "dim_date"
+        ],
+        "facts": [
+            "fact_listing"
+        ]
+    },
+    "access_instructions": {
+        "parquet_files": "dwh/parquet/{table_name}.parquet",
+        "csv_files": "dwh/csv/{table_name}.csv",
+        "metadata": "dwh/metadata/{table_name}_metadata.json"
+    }
+}

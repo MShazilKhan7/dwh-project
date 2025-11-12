@@ -1,0 +1,76 @@
+{
+    "table_name": "fact_listing",
+    "row_count": 48895,
+    "column_count": 11,
+    "columns": [
+        "listing_id",
+        "host_id",
+        "neighbourhood_id",
+        "room_type_id",
+        "date_id",
+        "price",
+        "minimum_nights",
+        "number_of_reviews",
+        "reviews_per_month",
+        "calculated_host_listings_count",
+        "availability_365"
+    ],
+    "dtypes": {
+        "listing_id": "int64",
+        "host_id": "int64",
+        "neighbourhood_id": "int64",
+        "room_type_id": "int64",
+        "date_id": "int64",
+        "price": "int64",
+        "minimum_nights": "int64",
+        "number_of_reviews": "int64",
+        "reviews_per_month": "float64",
+        "calculated_host_listings_count": "int64",
+        "availability_365": "int64"
+    },
+    "parquet_size_kb": 1299.54,
+    "csv_size_kb": 2268.69,
+    "compression_ratio": 42.7,
+    "export_timestamp": "2025-11-12T19:34:06.632863",
+    "sample_data": [
+        {
+            "listing_id": 2539,
+            "host_id": 2787,
+            "neighbourhood_id": 1,
+            "room_type_id": 1,
+            "date_id": 1,
+            "price": 149,
+            "minimum_nights": 1,
+            "number_of_reviews": 9,
+            "reviews_per_month": 0.21,
+            "calculated_host_listings_count": 6,
+            "availability_365": 365
+        },
+        {
+            "listing_id": 2595,
+            "host_id": 2845,
+            "neighbourhood_id": 2,
+            "room_type_id": 2,
+            "date_id": 2,
+            "price": 225,
+            "minimum_nights": 1,
+            "number_of_reviews": 45,
+            "reviews_per_month": 0.38,
+            "calculated_host_listings_count": 2,
+            "availability_365": 355
+        },
+        {
+            "listing_id": 3647,
+            "host_id": 4632,
+            "neighbourhood_id": 3,
+            "room_type_id": 1,
+            "date_id": 3,
+            "price": 150,
+            "minimum_nights": 3,
+            "number_of_reviews": 0,
+            "reviews_per_month": 0.0,
+            "calculated_host_listings_count": 1,
+            "availability_365": 365
+        }
+    ]
+}
