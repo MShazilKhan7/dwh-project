@@ -1,0 +1,144 @@
+{
+    "completeness": {
+        "fact_listing": {
+            "total_records": 48895,
+            "missing_values": {
+                "price": {
+                    "count": 11,
+                    "percentage": 0.02
+                },
+                "minimum_nights": {
+                    "count": 0,
+                    "percentage": 0.0
+                },
+                "number_of_reviews": {
+                    "count": 0,
+                    "percentage": 0.0
+                },
+                "availability_365": {
+                    "count": 0,
+                    "percentage": 0.0
+                }
+            }
+        },
+        "dim_listing": {
+            "total_records": 48895
+        },
+        "dim_host": {
+            "total_records": 37457
+        },
+        "dim_location": {
+            "total_records": 48871
+        },
+        "dim_room": {
+            "total_records": 3
+        },
+        "dim_date": {
+            "total_records": 1765
+        }
+    },
+    "accuracy": {
+        "price": {
+            "min": 0.0,
+            "max": 10000.0,
+            "avg": 152.7207,
+            "std": 240.15171391941672,
+            "anomalies": {
+                "negative": 0,
+                "zero": 11,
+                "extreme": 0
+            }
+        },
+        "minimum_nights": {
+            "min": 1,
+            "max": 1250,
+            "avg": 7.03,
+            "anomalies": {
+                "negative": 0,
+                "extreme": 14
+            }
+        },
+        "availability": {
+            "min": 0,
+            "max": 365,
+            "avg": 112.7813,
+            "anomalies": {
+                "negative": 0,
+                "invalid": 0
+            }
+        }
+    },
+    "consistency": {
+        "referential_integrity": {
+            "listing_id": 0,
+            "host_id": 0,
+            "neighbourhood_id": 0,
+            "room_type_id": 0
+        },
+        "duplicates": {
+            "dim_listing": 0,
+            "dim_host": 0,
+            "dim_location": 0,
+            "dim_room": 0
+        }
+    },
+    "validity": {
+        "geographic": {
+            "total": 48871,
+            "invalid_latitude": 0,
+            "invalid_longitude": 0
+        },
+        "room_types": {
+            "expected": [
+                "Entire home/apt",
+                "Private room",
+                "Shared room"
+            ],
+            "actual": [
+                "Private room",
+                "Entire home/apt",
+                "Shared room"
+            ],
+            "unexpected": []
+        },
+        "reviews": {
+            "negative_count": 0,
+            "negative_rate": 0,
+            "inconsistent": 0
+        }
+    },
+    "timeliness": {
+        "review_dates": {
+            "oldest": "2011-03-28 00:00:00",
+            "newest": "2019-07-08 00:00:00",
+            "years_span": 9,
+            "no_date": 0
+        },
+        "freshness_days": 2319
+    },
+    "uniqueness": {
+        "fact_listing": {
+            "total": 48895,
+            "unique": 48895,
+            "duplicates": 0,
+            "uniqueness_rate": 100.0
+        },
+        "hosts": {
+            "unique_hosts": 37457,
+            "avg_listings": 1.3054,
+            "max_listings": 327
+        }
+    },
+    "summary": {
+        "scores": {
+            "Completeness": 95.0,
+            "Accuracy": 98.0,
+            "Consistency": 100.0,
+            "Validity": 99.0,
+            "Timeliness": 40.0,
+            "Uniqueness": 100.0
+        },
+        "overall_score": 88.66666666666667,
+        "assessment_date": "2025-11-12T01:21:44.706687"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "table_name": "dim_location",
+    "row_count": 48871,
+    "column_count": 5,
+    "columns": [
+        "neighbourhood_group",
+        "neighbourhood",
+        "latitude",
+        "longitude",
+        "neighbourhood_id"
+    ],
+    "dtypes": {
+        "neighbourhood_group": "object",
+        "neighbourhood": "object",
+        "latitude": "float64",
+        "longitude": "float64",
+        "neighbourhood_id": "int64"
+    },
+    "parquet_size_kb": 785.95,
+    "csv_size_kb": 2273.21,
+    "compression_ratio": 65.4,
+    "export_timestamp": "2025-11-12T19:33:56.081753",
+    "sample_data": [
+        {
+            "neighbourhood_group": "Brooklyn",
+            "neighbourhood": "Kensington",
+            "latitude": 40.64749,
+            "longitude": -73.97237,
+            "neighbourhood_id": 1
+        },
+        {
+            "neighbourhood_group": "Manhattan",
+            "neighbourhood": "Midtown",
+            "latitude": 40.75362,
+            "longitude": -73.98377,
+            "neighbourhood_id": 2
+        },
+        {
+            "neighbourhood_group": "Manhattan",
+            "neighbourhood": "Harlem",
+            "latitude": 40.80902,
+            "longitude": -73.9419,
+            "neighbourhood_id": 3
+        }
+    ]
+}

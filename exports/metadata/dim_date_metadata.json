@@ -1,0 +1,51 @@
+{
+    "table_name": "dim_date",
+    "row_count": 1765,
+    "column_count": 6,
+    "columns": [
+        "last_review",
+        "date_id",
+        "year",
+        "month",
+        "day",
+        "weekday"
+    ],
+    "dtypes": {
+        "last_review": "datetime64[ns]",
+        "date_id": "int64",
+        "year": "float64",
+        "month": "float64",
+        "day": "float64",
+        "weekday": "object"
+    },
+    "parquet_size_kb": 32.56,
+    "csv_size_kb": 69.71,
+    "compression_ratio": 53.3,
+    "export_timestamp": "2025-11-12T19:33:39.485131",
+    "sample_data": [
+        {
+            "last_review": "2018-10-19 00:00:00",
+            "date_id": 1,
+            "year": 2018.0,
+            "month": 10.0,
+            "day": 19.0,
+            "weekday": "Friday"
+        },
+        {
+            "last_review": "2019-05-21 00:00:00",
+            "date_id": 2,
+            "year": 2019.0,
+            "month": 5.0,
+            "day": 21.0,
+            "weekday": "Tuesday"
+        },
+        {
+            "last_review": "NaT",
+            "date_id": 3,
+            "year": NaN,
+            "month": NaN,
+            "day": NaN,
+            "weekday": null
+        }
+    ]
+}

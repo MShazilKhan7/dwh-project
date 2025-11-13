@@ -1,0 +1,31 @@
+{
+    "table_name": "dim_listing",
+    "row_count": 48895,
+    "column_count": 2,
+    "columns": [
+        "listing_id",
+        "listing_name"
+    ],
+    "dtypes": {
+        "listing_id": "int64",
+        "listing_name": "object"
+    },
+    "parquet_size_kb": 1396.61,
+    "csv_size_kb": 2294.95,
+    "compression_ratio": 39.1,
+    "export_timestamp": "2025-11-12T19:33:48.207488",
+    "sample_data": [
+        {
+            "listing_id": 2539,
+            "listing_name": "Clean & quiet apt home by the park"
+        },
+        {
+            "listing_id": 2595,
+            "listing_name": "Skylit Midtown Castle"
+        },
+        {
+            "listing_id": 3647,
+            "listing_name": "THE VILLAGE OF HARLEM....NEW YORK !"
+        }
+    ]
+}
